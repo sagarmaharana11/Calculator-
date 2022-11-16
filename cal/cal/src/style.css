@@ -1,0 +1,213 @@
+@import url(https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap);
+
+@keyframes bounce {
+    0%,20%,50%,80%,to {
+        transform: translateZ(-2px) translateY(5px)
+    }
+
+    40% {
+        transform: rotateY(180deg) translateZ(-2px) translateY(-35px)
+    }
+
+    60% {
+        transform: translateZ(-2px) translateY(-25px)
+    }
+};
+*{}
+body {
+background-color: #1a1a1a;
+ background: radial-gradient(circle at center,#1a1546,#040411 40%);
+ display: block;
+ align-items: center;
+ justify-content: center;
+ height: 100vh;
+ width: 100%;
+  perspective: 1000px;
+}
+
+h3 {
+    font-size: 3.5rem;
+    line-height: 80%;
+   transform: rotateX(0) rotateY(-25deg);
+    text-transform: uppercase;
+    width: 500px;
+ text-align: center;
+    color: #b9dfff;
+    color: #fff;
+    font-family: "Zefani";
+ font-family: 'Abril Fatface';
+    margin: 3rem auto;
+    position: relative;
+    padding: 2rem 0 9rem;
+    text-shadow: 0 0 0px #fff,0 0 10px #fff,0 0 15px #fff,0 0 20px #228dff,0 0 35px #228dff,0 0 40px #228dff;
+ 
+ span {
+    display: inline-block;
+}
+
+// span:first-child {
+//     transform: translateZ(10px);
+// }
+
+// span:nth-child(2) {
+//     transform: translateZ(5px);
+// }
+
+// span:nth-child(3) {
+//     transform: translateZ(8px);
+// }
+
+// span:nth-child(4) {
+//     transform: translateZ(20px);
+// }
+
+// span:nth-child(5) {
+//     transform: translateZ(6px);
+// }
+
+// span:nth-child(6) {
+//     transform: translateZ(20px);
+// }
+
+}
+
+.scroll-more {
+  color: white;
+ text-align: center;
+    width: 450px;
+    position: absolute;
+    bottom: 8rem;
+    left: calc(50% - 225px);
+    margin: 0 auto;
+    font-size: 15rem;
+    opacity: 1;
+    transition: opacity .3s ease;
+    font-family: monospace;
+    pointer-events: none;
+    z-index: -1;
+    transform-origin: center;
+    -webkit-animation: bounce 3s cubic-bezier(.37,0,.21,1.02) infinite,fonts 5s linear infinite;
+    animation: bounce 3s cubic-bezier(.37,0,.21,1.02) infinite,fonts 5s linear infinite;
+}
+
+table {
+			border: 0px solid #1a1a1a;
+      border-radius: 10px;
+			margin-left: auto;
+			margin-right: auto;
+      border-spacing: 15px 15px;
+  box-shadow: 0 0 .2rem #fff,
+            0 0 .2rem #fff,
+            0 0 2rem #228dff,
+            0 0 0.8rem #228dff,
+            0 0 2.8rem #228dff;
+		}
+
+input[type="text"] {
+			padding: 30px 30px;
+      padding-bottom:5px;
+			font-size: 24px;
+			font-weight: bold;
+			border: none;
+			border-radius: 5px;
+			border: 0px solid black;
+      box-shadow: 0 0 .2rem #fff,
+            0 0 .2rem #fff,
+            0 0 2rem #228dff,
+            0 0 0.8rem #228dff,
+            0 0 2.8rem #228dff;
+		}
+/*Blue Button*/
+.button-Blue{
+  background-color: #0000;
+  border: 0 solid #E5E7EB;
+  box-sizing: border-box;
+  color: #FED128;
+  text-shadow: 0 0 2vw #FA1C16;
+  display: flex;
+  font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 1.75rem;
+  padding: .75rem 1.65rem;
+  position: relative;
+  text-align: center;
+  text-decoration: none #000000 solid;
+  text-decoration-thickness: auto;
+  width: 90%;
+  max-width: 460px;
+  position: relative;
+  cursor: pointer;
+  transform: rotate(-2deg);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-Blue:focus {
+  outline: 0;
+}
+
+.button-Blue:after {
+  content: '';
+  position: absolute;
+  border: 2px solid #fff;
+  box-shadow: 0 0 .2rem #fff,
+            0 0 .2rem #fff,
+            0 0 0.5rem #fff,
+            0 0 0.8rem #fff,
+            0 0 0.8rem #fff;
+  bottom: 4px;
+  left: 4px;
+  width: calc(100% - 1px);
+  height: calc(100% - 1px);
+}
+
+.button-Blue:hover:after {
+  bottom: 2px;
+  left: 2px;
+}
+
+@media (min-width: 768px) {
+  .button-Blue {
+    padding: .75rem 3rem;
+    font-size: 1.25rem;
+  }
+}
+
+
+/*font style*/
+.neon {
+  font-family: neon;
+  color: #FB4264;
+  font-size: 24px;
+  line-height: 0;
+  text-shadow: 0 0 3vw #F40A35;
+}
+
+.flux {
+  font-family: neon;
+  color: #426DFB;
+  font-size: 30px;
+  line-height: 0;
+  text-shadow: 0 0 3vw #2356FF;
+}
+
+.neon {
+  animation: neon 1s ease infinite;
+  -moz-animation: neon 1s ease infinite;
+  -webkit-animation: neon 1s ease infinite;
+}
+
+@keyframes neon {
+  0%,
+  100% {
+    text-shadow: 0 0 1vw #FA1C16, 0 0 3vw #FA1C16, 0 0 10vw #FA1C16, 0 0 10vw #FA1C16, 0 0 .4vw #FED128, .5vw .5vw .1vw #806914;
+    color: #FED128;
+  }
+  50% {
+    text-shadow: 0 0 .5vw #800E0B, 0 0 1.5vw #800E0B, 0 0 5vw #800E0B, 0 0 5vw #800E0B, 0 0 .2vw #800E0B, .5vw .5vw .1vw #40340A;
+    color: #806914;
+  }
+}
